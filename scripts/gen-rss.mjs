@@ -4,7 +4,7 @@ import RSS from 'rss';
 import matter from 'gray-matter';
 
 // Remake the __dirname property
-const __dirname = resolve("./scripts");
+const __dirname = resolve();
 
 const feed = new RSS({
 	title: 'Revenity',
@@ -13,7 +13,7 @@ const feed = new RSS({
 });
 
 // Read all the posts
-const posts = await fs.readdir(join(__dirname, '..', 'pages', 'posts'));
+const posts = await fs.readdir(join(__dirname, 'pages', 'posts'));
 
 await Promise.all(
 	posts.map(async name => {
@@ -22,7 +22,7 @@ await Promise.all(
 
 		// Post content
 		const content = await fs.readFile(
-			join(__dirname, '..', 'pages', 'posts', name)
+			join(__dirname, 'pages', 'posts', name)
 		);
 		const frontmatter = matter(content);
 
