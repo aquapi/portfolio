@@ -12,6 +12,8 @@ A web framework for modern web development.
 
 Now with database support and pre-setup server. See the [docs](https://aquaplmc.gitbook.io/newer.js) for more info.
 
+You can join our Discord server and become a contributor [here](https://discord.gg/Qwq3K2bxtM).
+
 ## Example code:
 
 Pre-setup server:
