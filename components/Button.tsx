@@ -1,15 +1,24 @@
-export type ButtonType =  "primary" | "secondary" | "accent" | "ghost" | "link";
+import { useContext } from "react";
+import { Context } from "./Loader";
 
-function Button({ type, children, normalCase = true }: { type?: ButtonType, children?: React.ReactNode, normalCase?: boolean }) {
-    let className = "btn";
+export type Variant = "primary" | "secondary" | "accent" | "ghost" | "link";
+export interface Props extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
+    variant?: Variant,
+    children?: React.ReactNode
+};
 
-    if (type)
-        className += " btn-" + type;
+function Button({ variant, children, className, ...rest }: Props) {
+    if (!className)
+        className = "btn";
+    else 
+        className += " btn";
 
-    if (normalCase)
-        className += " normal-case";
-    
-    return <button className={className}>{children}</button>
+    if (variant) {
+        const variantName = "btn-" + variant;
+        className += " " + variantName;
+    }
+
+    return <button className={className} {...rest}>{children}</button>
 }
 
 export default Button;

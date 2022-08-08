@@ -3,10 +3,10 @@ import Button from "../components/Button";
 
 const Home: NextPage = () => {
 	return <div className="navbar bg-base-100 display-flex justify-between pl-4">
-		<h2>AquaPI</h2>
+		<h3>AquaPI</h3>
 		<div>
-			<Button type="ghost">About</Button>
-			<Button type="ghost">Projects</Button>
+			<Button variant="ghost">About</Button>
+			<Button variant="ghost">Projects</Button>
 		</div>
 	</div>;
 }
