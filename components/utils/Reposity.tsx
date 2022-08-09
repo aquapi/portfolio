@@ -10,7 +10,7 @@ function Reposity({ org, name }: Props) {
     if (!org)
         org = "aquapi";
 
-    return <div className="m-2">
+    return <div className="m-2 cursor-pointer">
         <Image
             src={`https://github-readme-stats.vercel.app/api/pin/?username=${org}&repo=${name}&theme=nord`}
             alt="Github stat"

@@ -6,7 +6,7 @@ export interface Props {
 }
 
 function Badge({ children, href }: Props) {
-    return <div onClick={redirect(href, true)}>{children}</div>;
+    return <div onClick={redirect(href, true)} className="cursor-pointer">{children}</div>;
 }
 
 export default Badge;
