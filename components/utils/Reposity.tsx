@@ -16,6 +16,7 @@ function Reposity({ org, name }: Props) {
             alt="Github stat"
             width="400"
             height="120"
+            unoptimized={true}
             onClick={redirect(`https://github.com/${org}/${name}`, true)}
         />
     </div>;
