@@ -1,0 +1,37 @@
+@use "../utils";
+
+.wrapper {
+    width: 100vw;
+    @apply hero bg-base-200 min-h-screen h-fit;
+}
+
+.content {
+    @apply hero-content text-center flex-col text-neutral-content;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 52px;
+
+    h1 {
+        @apply text-5xl;
+    }
+
+    p {
+        @apply py-3;
+        width: 50%;
+        max-width: 700px;
+        color: whitesmoke;
+    }
+}
+
+.content-light {
+    * {
+        color: #0E1525;
+    }
+
+    p {
+        color: #282829;
+    }
+    background-color: currentColor;
+    --tw-text-opacity: 1;
+}

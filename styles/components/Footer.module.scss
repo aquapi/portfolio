@@ -1,0 +1,20 @@
+.wrapper {
+    @apply items-center p-4 footer bg-neutral text-neutral-content;
+    background-color: #2A2E37;
+
+    .left {
+        @apply items-center grid-flow-col;
+    }
+
+    .right {
+        @apply grid-flow-col gap-4 md:place-self-center md:justify-self-end items-center;
+    }
+
+    svg {
+        fill: whitesmoke;
+    }
+
+    p {
+        color: whitesmoke
+    }
+}

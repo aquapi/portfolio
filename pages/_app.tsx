@@ -1,6 +1,6 @@
 import "../styles/app.scss";
 import type { AppProps } from "next/app";
-import Loader, { Context } from "../components/Loader";
+import Loader, { Context } from "../components/utils/Loader";
 import { useContext } from "react";
 
 function App({ Component, pageProps }: AppProps) {

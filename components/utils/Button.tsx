@@ -1,6 +1,3 @@
-import { useContext } from "react";
-import { Context } from "./Loader";
-
 export type Variant = "primary" | "secondary" | "accent" | "ghost" | "link";
 export interface Props extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
     variant?: Variant,

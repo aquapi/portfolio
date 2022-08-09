@@ -1,0 +1,17 @@
+.wrapper {
+    @apply bg-base-100 fixed w-screen;
+    padding: 8px 5px 8px 15px;
+    height: 56px !important;
+
+    // Always on top
+    z-index: 100;
+
+    button {
+        color: whitesmoke;
+    }
+}
+
+.flex-wrapper {
+    @apply flex justify-between items-center;
+    height: 40px !important;
+}

@@ -1,0 +1,9 @@
+.flex-content-wrapper {
+    @apply flex justify-around;
+}
+
+@media only screen and (max-width: 930px) {
+    .flex-content-wrapper {
+        @apply block;
+    }
+}
